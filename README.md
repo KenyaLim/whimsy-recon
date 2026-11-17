@@ -32,21 +32,82 @@ means.
 
 ## Install
 
+Follow these steps one at a time in the terminal.
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/KenyaLim/whimsy-recon.git
+```
+
+### 2. Open the project folder
+
+```bash
 cd whimsy-recon
+```
 
-# 1. Install the CLI tool
+### 3. Create the CLI installation folder
+
+```bash
 mkdir -p ~/.local/share/whimsy-recon
-cp whimsy-recon.py ~/.local/share/whimsy-recon/
-chmod +x ~/.local/share/whimsy-recon/whimsy-recon.py
+```
 
-# 2. Install the Cinnamon applet
+### 4. Copy the CLI tool
+
+```bash
+cp whimsy-recon.py ~/.local/share/whimsy-recon/
+```
+
+### 5. Make the CLI executable
+
+```bash
+chmod +x ~/.local/share/whimsy-recon/whimsy-recon.py
+```
+
+### 6. Copy the Cinnamon applet
+
+```bash
 cp -r whimsy-recon@KenyaLim ~/.local/share/cinnamon/applets/
 ```
 
-Then right-click your panel → **Applets** → find **Whimsy Recon** → add it.
+### 7. Add the applet to the panel
+
+Right-click your panel → **Applets** → find **Whimsy Recon** → **Add**.
+
 If it does not appear, press `Alt+F2`, type `r`, and press Enter to restart Cinnamon.
+
+## Update
+
+Follow these steps one at a time whenever you want to install the latest version.
+
+### 1. Open the project folder
+
+```bash
+cd ~/whimsy-recon
+```
+
+### 2. Download the latest changes
+
+```bash
+git pull
+```
+
+### 3. Update the CLI tool
+
+```bash
+cp whimsy-recon.py ~/.local/share/whimsy-recon/
+```
+
+### 4. Update the Cinnamon applet
+
+```bash
+rm -rf ~/.local/share/cinnamon/applets/whimsy-recon@KenyaLim
+cp -r whimsy-recon@KenyaLim ~/.local/share/cinnamon/applets/
+```
+
+### 5. Restart Cinnamon
+
+Press `Alt+F2`, type `r`, and press Enter. Then open the applet again.
 
 ## Usage
 
