@@ -33,16 +33,16 @@ means.
 ## Install
 
 ```bash
-git clone https://github.com/yourname/whimsy-recon.git
+git clone https://github.com/KenyaLim/whimsy-recon.git
 cd whimsy-recon
 
 # 1. Install the CLI tool
 mkdir -p ~/.local/share/whimsy-recon
-cp whimsy_recon.py ~/.local/share/whimsy-recon/
-chmod +x ~/.local/share/whimsy-recon/whimsy_recon.py
+cp whimsy-recon.py ~/.local/share/whimsy-recon/
+chmod +x ~/.local/share/whimsy-recon/whimsy-recon.py
 
 # 2. Install the Cinnamon applet
-cp -r whimsy-recon@yourname ~/.local/share/cinnamon/applets/
+cp -r whimsy-recon@KenyaLim ~/.local/share/cinnamon/applets/
 ```
 
 Then right-click your panel → **Applets** → find **Whimsy Recon** → add it.
@@ -53,7 +53,7 @@ If it does not appear, press `Alt+F2`, type `r`, and press Enter to restart Cinn
 Run the CLI directly:
 
 ```bash
-python3 ~/.local/share/whimsy-recon/whimsy_recon.py
+python3 ~/.local/share/whimsy-recon/whimsy-recon.py
 ```
 
 Or click the 🌸 applet in your panel.
@@ -62,13 +62,13 @@ Or click the 🌸 applet in your panel.
 
 | File | Purpose |
 |------|---------|
-| `whimsy_recon.py` | CLI learning tool and whimsy theme |
-| `whimsy-recon@yourname/applet.js` | Cinnamon panel applet logic |
-| `whimsy-recon@yourname/metadata.json` | Applet metadata for Cinnamon |
+| `whimsy-recon.py` | CLI learning tool and whimsy theme |
+| `whimsy-recon@KenyaLim/applet.js` | Cinnamon panel applet logic |
+| `whimsy-recon@KenyaLim/metadata.json` | Applet metadata for Cinnamon |
 
 ## Customizing the theme
 
-Edit the `Theme` class in `whimsy_recon.py`. Each value is an ANSI color code,
+Edit the `Theme` class in `whimsy-recon.py`. Each value is an ANSI color code,
 so you can swap in your own palette.
 
 ## Roadmap

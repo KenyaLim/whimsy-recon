@@ -1,0 +1,7 @@
+{
+    "uuid": "whimsy-recon@KenyaLim",
+    "name": "Whimsy Recon",
+    "description": "Shows your local IP and launches Whimsy Recon",
+    "version": "1.0.0",
+    "multiversion": true
+}
